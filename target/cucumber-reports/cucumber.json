@@ -1,0 +1,121 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 8857293655,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginSteps.initialize()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Valid Login Test",
+        "description": "",
+        "id": "login-check;valid-login-test",
+        "after": [
+          {
+            "result": {
+              "duration": 92308,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginSteps.CloseBrowser(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 145505522,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on Home Page",
+            "match": {
+              "location": "LoginSteps.user_is_on_Home_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8778557720,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User Navigate to LogIn Page",
+            "match": {
+              "location": "LoginSteps.user_Navigate_to_LogIn_Page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5021413726,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User enters Credentials to LogIn",
+            "match": {
+              "location": "LoginSteps.user_enters_Credentials_to_LogIn(Credentials\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "User",
+                  "Pass"
+                ],
+                "line": 8
+              },
+              {
+                "cells": [
+                  "testuser_1",
+                  "Test@153"
+                ],
+                "line": 9
+              },
+              {
+                "cells": [
+                  "testuser_2",
+                  "Test@154"
+                ],
+                "line": 10
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2260921,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Message displayed Login Successfully",
+            "match": {
+              "location": "LoginSteps.message_displayed_Login_Successfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@LoginCheck"
+          }
+        ]
+      }
+    ],
+    "name": "Login Check",
+    "description": "",
+    "id": "login-check",
+    "keyword": "Feature",
+    "uri": "LoginFeature.feature"
+  }
+]
