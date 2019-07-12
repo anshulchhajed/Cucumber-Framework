@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 8857293655,
+  "duration": 8714189421,
   "status": "passed"
 });
 formatter.scenario({
@@ -71,32 +71,32 @@ formatter.match({
   "location": "LoginSteps.user_is_on_Home_Page()"
 });
 formatter.result({
-  "duration": 145505522,
+  "duration": 133106926,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_Navigate_to_LogIn_Page()"
 });
 formatter.result({
-  "duration": 8778557720,
+  "duration": 2642317802,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_enters_Credentials_to_LogIn(Credentials\u003e)"
 });
 formatter.result({
-  "duration": 5021413726,
+  "duration": 5875562616,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.message_displayed_Login_Successfully()"
 });
 formatter.result({
-  "duration": 2260921,
+  "duration": 1794873,
   "status": "passed"
 });
 formatter.after({
-  "duration": 92308,
+  "duration": 170667,
   "status": "passed"
 });
 });
