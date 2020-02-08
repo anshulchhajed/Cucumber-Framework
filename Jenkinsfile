@@ -10,6 +10,6 @@ stage('Cucumber Report'){
 cucumber failedFeaturesNumber: -1, failedScenariosNumber: -1, failedStepsNumber: -1, fileIncludePattern: '**/*.json', pendingStepsNumber: -1, skippedStepsNumber: -1, sortingMethod: 'ALPHABETICAL', undefinedStepsNumber: -1
  }
 stage('Email Notification'){
-mail bcc: '', body: 'Welcome to Jenkins Piopeline', cc: '', from: '', replyTo: '', subject: 'Cucumber Jenkins Report', to: 'ianshul19@gmail.com'
+mail bcc: '', body: 'Welcome to Jenkins Piopeline'cucumber failedFeaturesNumber: -1, failedScenariosNumber: -1, failedStepsNumber: -1, fileIncludePattern: '**/*.json', pendingStepsNumber: -1, skippedStepsNumber: -1, sortingMethod: 'ALPHABETICAL', undefinedStepsNumber: -1, cc: '', from: '', replyTo: '', subject: 'Cucumber Jenkins Report', to: 'ianshul19@gmail.com'
 }
 }
