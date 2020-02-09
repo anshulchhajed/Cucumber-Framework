@@ -11,6 +11,6 @@ cucumber failedFeaturesNumber: -1, failedScenariosNumber: -1, failedStepsNumber:
  }
 stage('Email Notification'){
 mail bcc: '', body: 'Welcome to Jenkins Pipeline', cc: '', from: '', replyTo: '', subject: 'Cucumber Jenkins Report', to: 'ianshul19@gmail.com'
-emailext attachmentsPattern: '**/overview-features.html', body: '', subject: 'Report', to: 'ianshul19@gmail.com'
+emailext body: 'readFile \'C:\\\\Program Files (x86)\\\\Jenkins\\\\jobs\\\\CucumberPipeline\\\\lastSuccessful\\\\cucumber-html-reports\\\\overview-features.html\'', mimeType: 'text/html', subject: 'Report', to: 'ianshul19@gmail.com'
 }
 }
