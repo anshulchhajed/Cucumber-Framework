@@ -9,6 +9,6 @@ Feature: Test Demo Application
     And Click on Login Button
     Then User should be able to login successfuly
     Examples:  
-    |anshul|chhajeds|
+    |anshul|chhajed|
     
    
