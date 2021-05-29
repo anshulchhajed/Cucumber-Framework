@@ -4,6 +4,7 @@ pipeline {
     tools {
         // Install the Maven version configured as "M3" and add it to the path.
         maven 'MAVEN_HOME'
+        jdk 'JAVA_HOME'
     }
 
     stages {
@@ -19,7 +20,7 @@ pipeline {
 stage('Test'){
     steps{
         
-       bat "mvn test"
+       bat "mvn install"
        
        post {
                 // If Maven was able to run the tests, even if some of the test
