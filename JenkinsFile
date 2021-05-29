@@ -3,8 +3,8 @@ pipeline {
 
     tools {
         // Install the Maven version configured as "M3" and add it to the path.
-        tool name: 'JAVA_HOME', type: 'jdk'
-        tool name: 'MAVEN_HOME', type: 'maven'
+         java 'JAVA_HOME'
+        maven 'MAVEN_HOME'
     }
 
     stages {
