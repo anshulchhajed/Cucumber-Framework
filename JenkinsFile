@@ -18,23 +18,24 @@ pipeline {
         stage('Test'){
                 steps{
             bat "mvn install"
-             emailext (
-             attachmentsPattern: '**/targetcucumer-reports/index.html',
-            subject: "STARTED: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'",
-            body: "STARTED: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'",
-            mimeType: 'text/html',
-            to: "ianshul19@gmail.com"
-          )
-     
+            
           }
         }
-      }
+        
+        stage('Report'){
+            steps{
+            cucumber failedFeaturesNumber: -1, failedScenariosNumber: -1, failedStepsNumber: -1, fileIncludePattern: '**/*.json', pendingStepsNumber: -1, skippedStepsNumber: -1, sortingMethod: 'ALPHABETICAL', undefinedStepsNumber: -1
+            }
+        }
+        }
+        
+      
       post {
     success {
       emailext (
           attachmentsPattern: '**/targetcucumer-reports/index.html',
           subject: "SUCCESSFUL: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'",
-           body: "STARTED: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'",
+           body: "SUCCESSFUL: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'",
           mimeType: 'text/html',
           to: "ianshul19@gmail.com"
           )
